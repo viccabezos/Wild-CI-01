@@ -1,0 +1,11 @@
+name: client-tests-workflow2
+
+on: pull_request
+jobs:
+  test-client:
+    runs-on: macos-12
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+      - name: Go to client and run tests
+        run: cd client && npm i && npm test
