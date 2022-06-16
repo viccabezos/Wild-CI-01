@@ -6,6 +6,6 @@ jobs:
     runs-on: macos-12
     steps:
       - name: Check out code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Go to client and run tests
         run: cd client && npm i && npm test
